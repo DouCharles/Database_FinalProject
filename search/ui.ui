@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>50</y>
+         <width>980</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <widget class="QComboBox" name="brand_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>172</x>
+          <y>20</y>
+          <width>154</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="price_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>333</x>
+          <y>20</y>
+          <width>153</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="search_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>815</x>
+          <y>20</y>
+          <width>154</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+ font: 10pt &quot;Rockwell&quot;; 
+background-color: rgb(60, 60, 60); 
+font: bold; 
+border: 1px solid silver; 
+border-radius: 6px;
+subcontrol-origin:  margin; 
+padding: 2 2px 2 2px;</string>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="secondhand_checkBox">
+        <property name="geometry">
+         <rect>
+          <x>493</x>
+          <y>20</y>
+          <width>154</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+ font: 10pt &quot;Rockwell&quot;; 
+background-color: rgb(60, 60, 60); 
+font: bold; 
+border: 1px solid silver; 
+border-radius: 6px;
+subcontrol-origin:  margin; 
+padding: 2 2px 2 2px;</string>
+        </property>
+        <property name="text">
+         <string>Second Hand</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="recommend_checkBox">
+        <property name="geometry">
+         <rect>
+          <x>654</x>
+          <y>20</y>
+          <width>154</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+ font: 10pt &quot;Rockwell&quot;; 
+background-color: rgb(60, 60, 60); 
+font: bold; 
+border: 1px solid silver; 
+border-radius: 6px;
+subcontrol-origin:  margin; 
+padding: 2 2px 2 2px;</string>
+        </property>
+        <property name="text">
+         <string>Recommend</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="class_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>20</y>
+          <width>154</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>0</y>
+          <width>90</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>Class :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>0</y>
+          <width>90</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>Brand :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>335</x>
+          <y>0</y>
+          <width>90</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>Price :</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>150</y>
+         <width>958</width>
+         <height>300</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QTableWidget" name="search_tableWidget">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>450</y>
+         <width>980</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="add_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>735</x>
+          <y>30</y>
+          <width>234</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+ font: 10pt &quot;Rockwell&quot;; 
+background-color: rgb(60, 60, 60); 
+font: bold; 
+border: 1px solid silver; 
+border-radius: 6px;
+subcontrol-origin:  margin; 
+padding: 2 2px 2 2px;</string>
+        </property>
+        <property name="text">
+         <string>Add To Cart</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="product_label">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>30</y>
+          <width>235</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="count_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>30</y>
+          <width>234</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="user_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>234</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>Account :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>0</y>
+          <width>120</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>Product_ID :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>0</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>Amount :</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>570</y>
+         <width>958</width>
+         <height>250</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="cart_tableWidget">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="order_tableWidget">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_6" native="true">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>803</y>
+         <width>980</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="order_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>20</y>
+          <width>120</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+ font: 10pt &quot;Rockwell&quot;; 
+background-color: rgb(60, 60, 60); 
+font: bold; 
+border: 1px solid silver; 
+border-radius: 6px;
+subcontrol-origin:  margin; 
+padding: 2 2px 2 2px;</string>
+        </property>
+        <property name="text">
+         <string>Order</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="delete_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>20</y>
+          <width>120</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+ font: 10pt &quot;Rockwell&quot;; 
+background-color: rgb(60, 60, 60); 
+font: bold; 
+border: 1px solid silver; 
+border-radius: 6px;
+subcontrol-origin:  margin; 
+padding: 2 2px 2 2px;</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="delete_label">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>20</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="payment_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>20</y>
+          <width>180</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(60, 60, 60);
+font: 10pt &quot;Rockwell&quot;; </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>120</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Product_ID :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>20</y>
+          <width>170</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+font: 12pt &quot;Rockwell&quot;; </string>
+        </property>
+        <property name="text">
+         <string>Payment method : </string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>550</y>
+         <width>60</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 16pt &quot;Rockwell&quot;;
+background-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Cart</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>550</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 16pt &quot;Rockwell&quot;;
+background-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Order</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>171</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 16pt &quot;Rockwell&quot;;
+background-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Search Result</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
